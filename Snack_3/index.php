@@ -3,21 +3,28 @@
         Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta
  -->
 
-
+<h1>Snack n. 3</h1>
 <h3>QUINDICI NUMERI CASUALI</h3>
 
 
  <?php
 
 
-    for ( $i = 0; $i < 15; $i++){
-        echo('<ul>');
-        echo('<li>');
-        $array_random = rand(1, 100);
-        echo($array_random);
+$arrayRandom = [];
+
+    while(count($arrayRandom) < 15 ) {
+        $numeroRandom = rand(1, 100);
+
+        if(!in_array($numeroRandom, $arrayRandom)){
+            $arrayRandom[] = $numeroRandom;
+        }
+
         
-        echo('</li>');
-        echo('</ul>');
     }
+
+    echo('<pre>');
+    var_dump($arrayRandom);
+    echo('</pre>');
+  
 
  ?>
