@@ -63,8 +63,8 @@
 
 //age
 if(isset($_GET['age'])) {
-    $name = $_GET['age'];
-    if(is_numeric($name)) {
+    $age = $_GET['age'];
+    if(is_numeric($age)) {
         echo('<pre>');
         echo('Age valido');
         echo('</pre>');
@@ -81,3 +81,4 @@ if(isset($_GET['age'])) {
 
 <p>Il tuo nome è <?php echo($name)?></p>
 <p>Il tuo nome è <?php echo($email)?></p>
+<p>Il tuo nome è <?php echo($age)?></p>
