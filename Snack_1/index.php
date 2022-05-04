@@ -39,15 +39,7 @@
 
     for ($i = 0; $i < count($basket); $i++){
         echo('<h3>' . 'Giornata n.' . $i . '</h3>');
-      
-
         echo($basket[$i]['squadraCasa'] . ' - ' . $basket[$i]['squadraOspiti'] . ' | ' . $basket[$i]['puntiCasa'] . ' - ' . $basket[$i]['puntiOspiti']);
-
-        // $keys = array_keys($basket[$i]);
-        // echo('<pre>');
-        // var_dump($keys);
-        // echo('</pre>');
-
     }
     
 

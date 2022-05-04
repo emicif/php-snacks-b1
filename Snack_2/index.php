@@ -32,7 +32,7 @@
 
     if(isset($_GET['name'])) {
         $name = $_GET['name'];
-        if(strlen($name) > 3) {
+        if(strlen($name) >= 3) {
             echo('<pre>');
             echo('Name valido');
             echo('</pre>');
